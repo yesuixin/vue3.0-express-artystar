@@ -1,0 +1,27 @@
+{
+  "name": "serve",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "adm-intsall": "npm install --prefix adm",
+    "adm": "npm start --prefix adm",
+    "server": "nodemon app.js",
+    "dev": "concurrently \"npm run server\" \"npm run adm\"",
+    "start": "node ./bin/www",
+    "socket": "nodemon webSocket.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.10",
+    "morgan": "~1.9.1",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "ws": "^7.4.2"
+  }
+}
